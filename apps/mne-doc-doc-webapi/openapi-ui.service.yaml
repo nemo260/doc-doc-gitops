@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mne-openapi-ui
+spec:
+  selector:
+    pod: mne-doc-doc-webapi-label
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 8081

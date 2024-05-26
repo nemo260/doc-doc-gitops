@@ -7,8 +7,3 @@ resources:
 
 patches:
 - path: patches/ufe-controller.deployment.yaml
-
-namespace: wac-hospital # chceme tieto objekty umiestniť do `wac-hospital` namespace
-
-commonLabels:
-  app.kubernetes.io/component: ufe-controller
