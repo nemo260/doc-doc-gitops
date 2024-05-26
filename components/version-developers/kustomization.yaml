@@ -4,3 +4,6 @@ images:
 - name: nemo260/doc-doc-fe 
   newName: nemo260/doc-doc-fe # {"$imagepolicy":  "wac-hospital:doc-doc-fe:name"}
   newTag: main # {"$imagepolicy": "wac-hospital:doc-doc-fe:tag"}
+- name: milung/ufe-controller
+  newName: milung/ufe-controller # {"$imagepolicy":  "wac-hospital:ufe-controller:name"}
+  newTag: 1.7.3 # {"$imagepolicy": "wac-hospital:ufe-controller:tag"}

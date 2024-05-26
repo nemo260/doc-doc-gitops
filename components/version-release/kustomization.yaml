@@ -3,7 +3,7 @@ kind: Component
 images:
 - name: nemo260/doc-doc-fe
   newName: nemo260/doc-doc-fe
-  newTag: 1.0.6  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  newTag: 1.0.7  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
 
 replacements:
  - targets:
@@ -22,17 +22,3 @@ replacements:
      options:
          delimiter: ':'
          index: 1
-
- - targets:
-   - select:
-         group: fe.milung.eu
-         version: v1
-         kind: WebComponent
-         name: mne-doc-doc-fe
-     fieldPaths:
-         - spec.hash-suffix
-   source:
-     version: v1
-     kind: Deployment
-     name:  mne-doc-doc-fe-deployment
-     fieldPath: spec.template.spec.containers.0.image
