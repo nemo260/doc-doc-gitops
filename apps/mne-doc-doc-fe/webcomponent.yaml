@@ -1,0 +1,21 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: mne-doc-doc-fe
+spec:
+  module-uri: http://mne-doc-doc-fe.wac-hospital/build/doc-doc-fe.esm.js
+                     # module web komponentu pre tento mikroFE
+                     # - umiestnený v namespace wac-hospital
+  navigation:
+    - element: doc-doc-app    # element, ktorý bude vložený na stránku
+                                    # pri navigácii na zoznam čakajúcich
+
+      path: doc-doc      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+      title: Správa lekárskej dokumentácie - Martin Nemec      # názov mikro aplikácie
+      details: Spravuje lekársku dokumentáciu pacientov.
+  preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
+  proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti
+                                    # musí byť táto hodnota nastavená na true
+  hash-suffix: v1alpha1             # voliteľný suffix pre načítanie modulu web komponentu - jeho zmenou
+                                    # sa mení názov URL pre modul a tým je možné predísť problémom
+                                    # s verziami vo vyrovnávacích pamätiach
