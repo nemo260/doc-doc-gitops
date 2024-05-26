@@ -9,6 +9,7 @@ commonLabels:
 
 resources:
  - ../../../apps/mne-doc-doc-fe
+ - ../../../apps/mne-doc-doc-webapi
 
 components:
  - ../../../components/version-release

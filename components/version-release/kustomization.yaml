@@ -4,6 +4,9 @@ images:
 - name: nemo260/doc-doc-fe
   newName: nemo260/doc-doc-fe
   newTag: 1.0.10
+- name: nemo260/doc-doc-webapi
+  newName: nemo260/doc-doc-webapi
+  newTag: 1.0.2
 
 replacements:
  - targets:
