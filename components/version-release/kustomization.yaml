@@ -3,7 +3,7 @@ kind: Component
 images:
 - name: nemo260/doc-doc-fe
   newName: nemo260/doc-doc-fe
-  newTag: 1.0.7  #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  newTag: 1.0.7  
 
 replacements:
  - targets:
