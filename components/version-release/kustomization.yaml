@@ -3,7 +3,7 @@ kind: Component
 images:
 - name: nemo260/doc-doc-fe
   newName: nemo260/doc-doc-fe
-  newTag: 1.0.7  
+  newTag: 1.0.5
 
 replacements:
  - targets:
